@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <title>Title of final exam</title>
+      <link rel="stylesheet" type="mystyle/css" >
+    </head>
+    <body bgcolor="#C9FFC9">
+      <div style="background-color:#FFE681">
+        <br>
+        <center>My profile</center><br>
+        <br>
+        <ul>
+          <li>簡介</li>
+          <li>一些網頁程式設計的心得</li>
+          <!-- ::marker{color:blue; font-size:20px;}-->
+          <!-- 序列標示變成藍色 -->
+        </ul>
+      </div>
+      <div>
+        <table border="1">
+          <caption>簡介</caption>
+          <thead style="color:#7D3B2D">
+            <tr>
+              <th>姓名</th>
+              <th>Vivian Chen</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>年齡</td> <td>unknown</td>
+            </tr>
+          
+            <tr>
+              <td>興趣</td> <td>is to sleep</td>
+            </tr>
+            <tr>
+              <td>系所</td> <td><a href="https://www.gep.ncu.edu.tw/" target="_blank">NCU Earth Science</a></td>
+              <!-- a:link{color:green;} a:hover{color:red;}
+              <!-- 在這裡引入mystyle.css，一開始沒點選過連結文字為綠色，懸浮在連結文字上為紅色-->
+        </table>
+        <h4>心得</h4>
+          <p>很感謝老師這學期的觀照，我知道我問太多問題了，希望老師不要太討厭我。雖然在寫作業的時候遇到很多挫折，但是解決的當下真的感到很幸福，很榮幸有機會接觸html</p>
+          <div>
+          <p id="clicking">Let's wait and see...</p>
+          <button type="button" onclick="myFunction()">Hidden text</button>
+          </div>
+          <script>
+            function myFunction(){
+              document.getElementById("clicking").innerHTML="d(`･∀･)b";
+            }
+          </script>
+          <?php
+            $a=array("Timmy","Hingis","Anna","Nelson","Kevin","Yeti","Oscar","Uki");
+            foreach ($a as $name){
+              echo "$name<br>";
+            }
+          ?>
+            <center><img src="https://www.gep.ncu.edu.tw/img/history/story/history_02.jpg"></center>
+          </body>
+    </html>
+      
+               
+              
+          
